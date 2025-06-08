@@ -47,7 +47,7 @@ const portfolioProjects: Project[] = [
     year: "2024",
     title: "Tic Tac Toe",
     results: [{ title: "Implemented MinMax Algorithm" }],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://google.com",
     images: [aiStartupLandingPage],
     label: "View Live Site",
   },
