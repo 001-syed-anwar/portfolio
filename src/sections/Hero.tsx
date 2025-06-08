@@ -8,7 +8,6 @@ import SparkleIcon from '@/assets/icons/sparkle.svg';
 
 export const HeroSection = () => {
   return (
-    // <div className='flex justify-center items-center w-full'>
     <div id="home" className='py-32 md:py-48 lg:py-60 relative z-0 overflow-hidden'>
       <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
         <div className='absolute inset-0 -z-30 opacity-5' style={{ backgroundImage: `url(${grainImage.src})` }} />
@@ -73,7 +72,5 @@ export const HeroSection = () => {
         </div>
       </div>
     </div >
-    // </div>
-
   );
 };

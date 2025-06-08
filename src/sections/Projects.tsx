@@ -60,7 +60,7 @@ export function ProjectsSection() {
         <SectionHeader description="See how I transformed concepts into real, polished products." eyebrow="Featured Projects" title="Real-World Results" />
         <div className="flex flex-col gap-12 mt-12 md:mt-20">
           {portfolioProjects.map((project) => (
-            <Card key={project.title} className="pb-1 px-8 pt-8 md:px-12 md:pt-12 lg:pt-16 lg:px-20">
+            <Card key={project.title} className="pb-1 px-8 pt-8 md:px-12 md:pt-12 lg:flex-row lg:pt-16 lg:px-20">
               <div className="lg:w-[40%]">
                 <div className="flex justify-between items-center">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 text-transparent bg-clip-text">
