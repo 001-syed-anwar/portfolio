@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "gh-pages -d out -r portfolio",
+    "deploy": "gh-pages -d out -r https://github.com/001-syed-anwar/portfolio.git ",
     "export": "next export",
     "start": "next start",
     "lint": "next lint"
