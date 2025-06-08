@@ -8,8 +8,8 @@ import { ProjectsSection } from "@/sections/Projects";
 export default function Home() {
   return (
     <div>
-      <Header/>
-       <HeroSection />
+      <Header />
+      <HeroSection />
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
