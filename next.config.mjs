@@ -43,11 +43,6 @@ const nextConfig = {
 
     return config;
   },
-  output:'export',
-  trailingSlash:true,
-  images:{
-    unoptimized:true,
-  },
 };
 
 export default nextConfig;
