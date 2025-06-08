@@ -1,10 +1,8 @@
 import grainImage from '@/assets/images/grain.jpg';
+import { ComponentPropsWithoutRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 
-export const Card = ({className, children}:{
-    className?:string;
-    children:React.ReactNode;
-}) => {
+export const Card = ({className, children ,...other}:ComponentPropsWithoutRef<"div">) => {
     return (
         <div
             className={twMerge(`flex flex-col bg-gray-800 rounded-3xl relative z-0 shadow-lg

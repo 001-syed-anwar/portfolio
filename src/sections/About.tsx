@@ -78,8 +78,7 @@ export const AboutSection = () => {
       <div className="mt-20 flex flex-col gap-6">
         <Card className="h-[320px] overflow-hidden">
           <CardHeader className="px-6 pt-6" description="Explore the technologies and tools used to craft exceptional web apps" title="My Tools" />
-          <ToolboxItems items={toolboxItems} className="mt-6" />
-          <ToolboxItems items={toolboxItems} className="mt-6" itemClassName="-translate-x-1/2" />
+          <ToolboxItems items={toolboxItems} className="mt-6" itemClassName="animate-move-left" />
         </Card>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <Card className="h-[320px] overflow-y-hidden md:col-span-2 p-6">
@@ -95,7 +94,7 @@ export const AboutSection = () => {
             <CardHeader description="Explore my interest" title="Beyond the code" className="px-6 py-6" />
             <div className="relative flex-1">
               {hobbies.map((item) => (
-                <div key={item.title} className="absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5" style={{
+                <div key={item.title} className="animate-bounce [animation-duration:4s] absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5" style={{
                   left: item.left,
                   top: item.top,
                 }}>
