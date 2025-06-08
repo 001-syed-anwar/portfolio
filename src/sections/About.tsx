@@ -94,7 +94,7 @@ export const AboutSection = () => {
             <CardHeader description="Explore my interest" title="Beyond the code" className="px-6 py-6" />
             <div className="relative flex-1">
               {hobbies.map((item) => (
-                <div key={item.title} className="animate-bounce [animation-duration:4s] absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5" style={{
+                <div key={item.title} className="animate-bounce-long absolute inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5" style={{
                   left: item.left,
                   top: item.top,
                 }}>
