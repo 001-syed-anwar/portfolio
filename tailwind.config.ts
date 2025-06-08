@@ -29,7 +29,7 @@ const config: Config = {
       animation:{
         'ping-large':'ping-large 1s ease-in-out infinite',
         'move-left':'move-left 20s linear infinite',
-        'bounce-once': 'bounceOnce 0.6s ease',
+        'bounce-long': 'bounce-long 3s ease infinite',
       },
       keyframes:{
         'ping-large':{
@@ -40,15 +40,15 @@ const config: Config = {
         },
         'move-left':{
           '0%':{
-            transform:'translateX(0%)'
+            transform:'translateX(0%)',
           },
           '100%':{
             transform:'translateX(-50%)'
           }
         },
-        'bounceOnce': {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-8px)' },
+        'bounce-long': {
+          '0%, 100%': { transform: 'translateY(0) scale(1)' },
+          '50%': { transform: 'translateY(-10px) scale(1.05)' },
         },
       },
     },
