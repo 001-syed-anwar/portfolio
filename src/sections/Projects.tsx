@@ -34,10 +34,11 @@ const portfolioProjects: Project[] = [
     year: "2025",
     title: "Slack Clone",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
+      { title: "A fully functional Slack clone built with Spring Boot and WebSocket for real-time messaging, powered by PostgreSQL for robust data persistence." },
+      { title: "The frontend is developed using React and Next.js, delivering a fast, responsive, and SEO-friendly user experience." },
+      { title: "It features direct messages, threads, reactions, workspace management, and role-based access control — all with real-time sync." }
+    ]
+    ,
     link: "https://youtu.be/BcVB9N3fbJY",
     images: [slackClone1, slackClone2, slackClone3],
     label: "Watch Youtube Preview",
@@ -46,7 +47,11 @@ const portfolioProjects: Project[] = [
     company: "React Project",
     year: "2024",
     title: "Tic Tac Toe",
-    results: [{ title: "Implemented MinMax Algorithm" }],
+    results: [
+      { title: "A classic Tic Tac Toe game built using React with a sleek and responsive UI." },
+      { title: "Supports both two-player mode and a challenging single-player mode against the computer." },
+      { title: "The computer opponent is powered by the Minimax AI search algorithm for optimal decision-making." }
+    ],
     link: "https://001-syed-anwar.github.io/tictactoe/",
     images: [tictactoe],
     label: "Play Now",
@@ -57,51 +62,51 @@ const portfolioProjects: Project[] = [
 export function ProjectsSection() {
   return (
     <div id="project" className="py-20 px-4 md:px-6 lg:px-20">
-        <SectionHeader description="See how I transformed concepts into real, polished products." eyebrow="Featured Projects" title="Real-World Results" />
-        <div className="flex flex-col gap-12 mt-12 md:mt-20">
-          {portfolioProjects.map((project,projectIndex) => (
-            <Card key={project.title} className="pb-1 px-8 pt-8 md:px-12 md:pt-12 lg:flex-row lg:pt-16 lg:px-20 sticky top-16" style={{
-              top: `calc(64px + ${projectIndex * 40}px)`,
-            }}>
-              <div className="lg:w-[40%]">
-                <div className="flex justify-between items-center">
-                  <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 text-transparent bg-clip-text">
-                    <span>{project.company}</span>
-                    <span>&bull;</span>
-                    <span>{project.year}</span>
-                  </div>
+      <SectionHeader description="See how I transformed concepts into real, polished products." eyebrow="Featured Projects" title="Real-World Results" />
+      <div className="flex flex-col gap-12 mt-12 md:mt-20">
+        {portfolioProjects.map((project, projectIndex) => (
+          <Card key={project.title} className="pb-1 px-8 pt-8 md:px-12 md:pt-12 lg:flex-row lg:pt-16 lg:px-20 sticky top-16" style={{
+            top: `calc(64px + ${projectIndex * 40}px)`,
+          }}>
+            <div className="lg:w-[40%]">
+              <div className="flex justify-between items-center">
+                <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm gap-2 text-transparent bg-clip-text">
+                  <span>{project.company}</span>
+                  <span>&bull;</span>
+                  <span>{project.year}</span>
                 </div>
-                <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-3xl text-white">{project.title}</h3>
-                <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
-                <ul className="mt-6 space-y-2 text-white/80 text-sm md:text-lg">
-                  {project.results.map((result, idx) => (
-                    <li key={idx} className="flex items-start gap-2">
-                      <CheckIcon className="size-5 md:size-6" />
-                      <span>{result.title}</span>
-                    </li>
-                  ))}
-                </ul>
+              </div>
+              <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-3xl text-white">{project.title}</h3>
+              <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+              <ul className="mt-6 space-y-2 text-white/80 text-sm md:text-lg">
+                {project.results.map((result, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <CheckIcon className="size-5 md:size-6" />
+                    <span>{result.title}</span>
+                  </li>
+                ))}
+              </ul>
 
-                <div className="mt-6" >
-                  <a href={project.link} target="_blank" rel="noopener noreferrer">
-                    <button
-                      className="inline-flex items-center justify-center gap-2 bg-white
+              <div className="mt-6" >
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <button
+                    className="inline-flex items-center justify-center gap-2 bg-white
                   text-gray-900 h-12 w-full md:w-auto px-4 rounded-xl font-semibold mt-8
                     hover:opacity-90 transition"
-                    >
-                      <span>{project.label}</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
-                </div>
+                  >
+                    <span>{project.label}</span>
+                    <ArrowUpRightIcon className="size-4" />
+                  </button>
+                </a>
               </div>
-              <div className="lg:w-[60%]">
-                  <ProjectCard key={project.title} project={project} />
-              </div>
-            </Card>
-          ))}
-        </div>
+            </div>
+            <div className="lg:w-[60%]">
+              <ProjectCard key={project.title} project={project} />
+            </div>
+          </Card>
+        ))}
       </div>
+    </div>
   );
 }
 
