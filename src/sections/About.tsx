@@ -134,6 +134,7 @@ export const AboutSection = () => {
                                 <a href={"https://leetcode.com/u/Syed_Anwar_leetcode/"} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-row gap-2 items-center justify-center">
                                         <LeetcodeIcon className="size-10" />
+                                        <span className="font-medium text-gray-950"> LeetCode </span>
                                         <ArrowUpRightIcon className="size-8 text-gray-900" />
                                     </div>
                                 </a>
@@ -145,6 +146,7 @@ export const AboutSection = () => {
                                 <a href={"https://www.geeksforgeeks.org/user/001syed69hk/"} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-row gap-2 items-center justify-center">
                                         <GfgIcon className="size-10" />
+                                        <span className="font-medium text-gray-950"> GFG </span>
                                         <ArrowUpRightIcon className="size-8 text-gray-900" />
                                     </div>
                                 </a>
@@ -156,6 +158,7 @@ export const AboutSection = () => {
                                 <a href={"https://github.com/001-syed-anwar/"} target="_blank" rel="noopener noreferrer">
                                     <div className="flex flex-row gap-2 items-center justify-center">
                                         <GithubIcon2 className="size-10" />
+                                        <span className="font-medium text-gray-950"> Github </span>
                                         <ArrowUpRightIcon className="size-8 text-gray-900" />
                                     </div>
                                 </a>
