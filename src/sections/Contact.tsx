@@ -1,8 +1,14 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from '@/assets/images/grain.jpg';
+import { ContactDialog } from "@/components/ContactDialog";
+import { useState } from "react";
 
 export const ContactSection = () => {
+  const [open, setOpen] = useState(false)
+
   return (
+    <>
+    <ContactDialog open={open} setOpen={setOpen} />
     <div id="contact" className="py-20 px-4 md:px-6 lg:px-20">
       <div className="relative z-0 overflow-hidden bg-gradient-to-r from-emerald-300 to-sky-400 text-gray-800 py-8 px-10 rounded-3xl text-center">
         <div className='absolute inset-0 opacity-5 -z-10' style={{ backgroundImage: `url(${grainImage.src})` }} />
@@ -14,7 +20,7 @@ export const ContactSection = () => {
             </p>
           </div>
           <div>
-            <button className="text-white border border-gray-950 bg-gray-800 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max">
+            <button onClick={()=>{setOpen(true)}} className="text-white border border-gray-950 bg-gray-800 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max">
               <span>Contact Me</span>
               <ArrowUpRightIcon />
             </button>
@@ -22,5 +28,6 @@ export const ContactSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };

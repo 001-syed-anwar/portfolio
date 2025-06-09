@@ -4,7 +4,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import aiStartupLandingPage from "@/assets/images/slack-clone-3.png";
 import slackClone1 from "@/assets/images/slack-clone-1.png";
 import slackClone2 from "@/assets/images/slack-clone-2.png";
 import slackClone3 from "@/assets/images/slack-clone-3.png";
