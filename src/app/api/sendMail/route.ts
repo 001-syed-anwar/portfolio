@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: Request) {
-    const { email, message } = await req.json()
+    const { email, message, name } = await req.json()
 
-    if (!email || !message) {
+    if (!email || !message || !name) {
         return NextResponse.json({ error: "Invalid input" }, { status: 400 })
     }
 
@@ -20,7 +20,7 @@ export async function POST(req: Request) {
         await transporter.sendMail({
             from: process.env.GMAIL_USER,
             to: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
-            subject: `New message from ${email} in Portfolio`,
+            subject: `New message from ${email} (${name}) in Portfolio`,
             text: message,
             replyTo: email,
         })

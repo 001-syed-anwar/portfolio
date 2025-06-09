@@ -4,7 +4,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import aiStartupLandingPage from "@/assets/images/slack-clone-3.png";
+import tictactoe from "@/assets/images/tictactoe.png";
 import slackClone1 from "@/assets/images/slack-clone-1.png";
 import slackClone2 from "@/assets/images/slack-clone-2.png";
 import slackClone3 from "@/assets/images/slack-clone-3.png";
@@ -47,9 +47,9 @@ const portfolioProjects: Project[] = [
     year: "2024",
     title: "Tic Tac Toe",
     results: [{ title: "Implemented MinMax Algorithm" }],
-    link: "https://google.com",
-    images: [aiStartupLandingPage],
-    label: "View Live Site",
+    link: "https://001-syed-anwar.github.io/tictactoe/",
+    images: [tictactoe],
+    label: "Play Now",
   },
 ];
 
