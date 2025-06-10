@@ -61,7 +61,7 @@ export const HeroSection = () => {
               I Specialise in backend development
             </p>
           </div>
-          <div className='flexSpecialise flex-col md:flex-row justify-center items-center mt-8 gap-4'>
+          <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
             <a href={"https://drive.google.com/file/d/1_ImQW5_uVeYZgX-7v8u3ojzoUIFJhsbO/view?usp=sharing"} target="_blank" rel="noopener noreferrer" className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
               <span className='font-semibold'>My Resume</span>
               <ArrowDown className="size-4" />
