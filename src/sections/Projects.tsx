@@ -4,7 +4,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import tictactoe from "@/assets/images/tictactoe.png";
+import tictactoe1 from "@/assets/images/tictactoe1.png";
+import tictactoe2 from "@/assets/images/tictactoe2.png";
 import slackClone1 from "@/assets/images/slack-clone-1.png";
 import slackClone2 from "@/assets/images/slack-clone-2.png";
 import slackClone3 from "@/assets/images/slack-clone-3.png";
@@ -53,7 +54,7 @@ const portfolioProjects: Project[] = [
       { title: "The computer opponent is powered by the Minimax AI search algorithm for optimal decision-making." }
     ],
     link: "https://001-syed-anwar.github.io/tictactoe/",
-    images: [tictactoe],
+    images: [tictactoe1,tictactoe2],
     label: "Play Now",
   },
 ];
