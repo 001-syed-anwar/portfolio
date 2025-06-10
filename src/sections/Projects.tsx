@@ -31,6 +31,19 @@ interface Project {
 // 📁 Data
 const portfolioProjects: Project[] = [
   {
+    company: "React Project",
+    year: "2024",
+    title: "Tic Tac Toe",
+    results: [
+      { title: "A classic Tic Tac Toe game built using React with a sleek and responsive UI." },
+      { title: "Supports both two-player mode and a challenging single-player mode against the computer." },
+      { title: "The computer opponent is powered by the Minimax AI search algorithm for optimal decision-making." }
+    ],
+    link: "https://001-syed-anwar.github.io/tictactoe/",
+    images: [tictactoe1,tictactoe2],
+    label: "Play Now",
+  },
+  {
     company: "Full Stack Slack",
     year: "2025",
     title: "Slack Clone",
@@ -43,19 +56,6 @@ const portfolioProjects: Project[] = [
     link: "https://youtu.be/BcVB9N3fbJY",
     images: [slackClone1, slackClone2, slackClone3],
     label: "Watch Youtube Preview",
-  },
-  {
-    company: "React Project",
-    year: "2024",
-    title: "Tic Tac Toe",
-    results: [
-      { title: "A classic Tic Tac Toe game built using React with a sleek and responsive UI." },
-      { title: "Supports both two-player mode and a challenging single-player mode against the computer." },
-      { title: "The computer opponent is powered by the Minimax AI search algorithm for optimal decision-making." }
-    ],
-    link: "https://001-syed-anwar.github.io/tictactoe/",
-    images: [tictactoe1,tictactoe2],
-    label: "Play Now",
   },
 ];
 
