@@ -50,10 +50,13 @@ export const HeroSection = () => {
         <div className='flex flex-col items-center'>
           <Image src={memojiImage} className='size-[100px]' alt='Profile' />
           <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
-            <div className='bg-green-500 size-2.5 rounded-full relative'>
-              <div className="bg-green-700 animate-ping-large absolute inset-0 rounded-full"/>
-            </div>
-            <div className='text-sm font-medium text-center'>Actively Seeking full-time SDE Role</div>
+            { 
+              false && 
+              <div className='bg-green-500 size-2.5 rounded-full relative'>
+                <div className="bg-green-700 animate-ping-large absolute inset-0 rounded-full"/>
+              </div> 
+            }
+            <div className='text-sm font-medium text-center'>SDE @ZakApps</div>
           </div>
           <div className='max-w-lg mx-auto'>
             <h1 className='font-serif text-3xl md:text-5xl text-center mt-8'>I Build Web Apps</h1>
